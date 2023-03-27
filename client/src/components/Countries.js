@@ -15,7 +15,7 @@ const Countries = () => {
 
       axios
       .get(
-        "https://restcountries.eu/rest/v2/all?fields=name;population;region;capital;flag"
+        "https://restcountries.com/v3.1/all?fields=name;population;region;capital;flag"
         )
         .then((res) => {
           setData(res.data);
